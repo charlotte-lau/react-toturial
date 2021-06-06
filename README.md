@@ -8,7 +8,7 @@ This project was created to practice React.js by building a Tic-tac-toe game. It
 - [Available Scripts](#available-scripts)
   - [npm start](#npm-start)
   - [npm run build](#npm-run-build)
-
+- [Credits](#credits)
 
 ## Available Scripts
 
@@ -32,4 +32,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](#deployment) for more information.
 
+## Credits
 
+This project followed the tutorial on React (https://reactjs.org/tutorial/tutorial.html#before-we-start-the-tutorial). 
