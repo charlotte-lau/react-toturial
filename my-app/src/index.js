@@ -49,6 +49,7 @@ class Game extends React.Component {
         movedPosition: null
       }],
       stepNumber: 0,
+      isAccending: true,
       xIsNext: true
     }
   }
@@ -75,6 +76,12 @@ class Game extends React.Component {
     this.setState({
       stepNumber: step,
       xIsNext: (step % 2) === 0
+    })
+  }
+
+  toggleMovedList() {
+    this.setState({
+      isAccending: !this.state.isAccending
     })
   }
 
@@ -115,7 +122,8 @@ class Game extends React.Component {
         </div>
         <div className="game-info">
           <div>{status}</div>
-          <ol>{moves}</ol>
+          <button onClick={() => this.toggleMovedList()}>Reverse list</button>
+          <ol>{this.state.isAccending?moves:moves.reverse()}</ol>
         </div>
       </div>
     );
