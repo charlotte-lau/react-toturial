@@ -1,6 +1,6 @@
 # Tic Tac Toe game
 
-![ScreenShot](/screenshots/start.png)
+![alt text](/screenshots/start.png)
 
 This project was created to practice React.js by building a Tic-tac-toe game. It's a game involved two players taking turns to complete a row, column or diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares. It used the common techniques in React developement and basic infrastructure like components, props and state. 
 
