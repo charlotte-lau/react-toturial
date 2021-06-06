@@ -35,6 +35,10 @@ ol, ul {
   font-weight: bold;
 }
 
+.square.win {
+  background: yellow;
+}
+
 .square:focus {
   outline: none;
 }
