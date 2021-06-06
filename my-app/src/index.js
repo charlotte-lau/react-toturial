@@ -4,7 +4,7 @@ import './index.css';
 
 function Square(props) {
     return (
-      <button className="square" 
+      <button className={`square ${props.current ? "current" : ''}` }
       onClick={props.onClick}>
         {props.value}
       </button>
@@ -15,6 +15,7 @@ class Board extends React.Component {
   renderSquare(i) {
     return (
           <Square value={this.props.squares[i]} 
+          current={(this.props.currentPosition == i)}
           onClick={() => this.props.onClick(i)}/>
         );
   }
@@ -109,6 +110,7 @@ class Game extends React.Component {
         <div className="game-board">
           <Board 
             squares={current.squares}
+            currentPosition={current.movedPosition}
             onClick={(i) => this.handleClick(i)}
           />
         </div>
